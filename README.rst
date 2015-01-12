@@ -66,6 +66,8 @@ creating models.
 From there, each request will have access to `cherrypy.request.db`,
 which is an instance of a SQLAlchemy session.
 
+There is a more complete `example.py` in the source.
+
 
 * Free software: BSD license
 * Documentation: https://cp_sqlalchemy.readthedocs.org.
