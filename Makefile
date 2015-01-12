@@ -20,8 +20,11 @@ help:
 	@echo "bump - bump the version number via bumpversion."
 	@echo '       use `-e BUMPTYPE=minor` to specify `major` or `minor` (default is `patch`).'
 
-bootstrap:
+
+$(VENV)/bin/pip:
 	virtualenv $(VENV)
+
+bootstrap: $(VENV)/bin/pip
 	$(VENV)/bin/pip install -r dev_requirements.txt
 
 clean: clean-build clean-pyc clean-test
