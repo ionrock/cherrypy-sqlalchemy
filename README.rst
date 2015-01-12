@@ -72,4 +72,5 @@ There is a more complete `example.py` in the source.
 
 
 * Free software: BSD license
-* Documentation: https://cp_sqlalchemy.readthedocs.org.
+..
+   * Documentation: https://cp_sqlalchemy.readthedocs.org.
