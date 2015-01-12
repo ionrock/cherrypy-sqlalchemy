@@ -2,14 +2,15 @@
 CherryPy-SQLAlchemy
 ===================
 
-.. image:: https://badge.fury.io/py/cp_sqlalchemy.png
-    :target: http://badge.fury.io/py/cp_sqlalchemy
+..
+   .. image:: https://badge.fury.io/py/cp_sqlalchemy.png
+       :target: http://badge.fury.io/py/cp_sqlalchemy
 
-.. image:: https://travis-ci.org/ionrock/cp_sqlalchemy.png?branch=master
-        :target: https://travis-ci.org/ionrock/cp_sqlalchemy
+   .. image:: https://travis-ci.org/ionrock/cp_sqlalchemy.png?branch=master
+	   :target: https://travis-ci.org/ionrock/cp_sqlalchemy
 
-.. image:: https://pypip.in/d/cp_sqlalchemy/badge.png
-        :target: https://pypi.python.org/pypi/cp_sqlalchemy
+   .. image:: https://pypip.in/d/cp_sqlalchemy/badge.png
+	   :target: https://pypi.python.org/pypi/cp_sqlalchemy
 
 
 CherryPy-SQLAlchemy makes it easy to use SQLAlchemy within CherryPy
