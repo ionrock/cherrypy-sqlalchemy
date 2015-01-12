@@ -17,7 +17,7 @@ requirements = [
 
 setup(
     name='cp_sqlalchemy',
-    version='0.5.0',
+    version='0.5.1',
     description='Use SQLAlchemy with CherryPy',
     long_description=readme,
     author='Eric Larson',
