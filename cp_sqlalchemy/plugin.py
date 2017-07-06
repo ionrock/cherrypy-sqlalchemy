@@ -1,6 +1,6 @@
 from cherrypy.process import plugins
 
-import cherrpy
+import cherrypy
 
 from sqlalchemy import create_engine
 
