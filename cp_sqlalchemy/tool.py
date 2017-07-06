@@ -46,4 +46,3 @@ class SQLAlchemyTool(cherrypy.Tool):
             raise
         finally:
             self.session.remove()
-        self.session.close()
