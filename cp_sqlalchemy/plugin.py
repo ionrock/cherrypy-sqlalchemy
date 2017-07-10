@@ -1,6 +1,6 @@
 from cherrypy.process import plugins
 
-import cherrpy
+import cherrypy
 
 from sqlalchemy import create_engine
 
@@ -35,6 +35,7 @@ class SQLAlchemyPlugin(plugins.SimplePlugin):
         if not self.sa_engine:
             self.start()
         cherrypy.log('Creating tables: %s' % self.sa_engine)
+        self.orm_base.metadata.bind = self.sa_engine
         self.orm_base.metadata.create_all(self.sa_engine)
 
     def stop(self):
