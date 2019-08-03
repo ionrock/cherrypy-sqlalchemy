@@ -2,6 +2,7 @@
 VENV=venv
 CHEESE=https://pypi.python.org/pypi
 BUMPTYPE=patch
+SOURCE=$(shell find cp_sqlalchemy/ -name '*.py')
 
 help:
 	@echo "bootstrap - create a virtualenv and install the necessary packages for development."
@@ -68,10 +69,10 @@ docs:
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html
 
-release: clean
-	python setup.py sdist register -r $(CHEESE) upload -r $(CHEESE)
+release: dist
+	$(VENV)/bin/twine upload  --verbose dist/CherryPy-SQLAlchemy-*.tar.gz
 
-dist: clean
+dist: clean $(SOURCE)
 	python setup.py sdist
 	ls -l dist
 
